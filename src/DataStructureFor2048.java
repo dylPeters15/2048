@@ -152,62 +152,6 @@ public class DataStructureFor2048 {
 			}
 			didLose();
 		}
-		//			boolean didLose = true;
-		//			if (labels.length == 0 || labels[0].length == 0){
-		//				didLose();
-		//				return;
-		//			} else if (labels.length == 1){
-		//				if (labels[0].length == 1){
-		//					didLose();
-		//				} else if (labels[0].length == 2){
-		//					if (labels[0][0] != labels[0][1]){
-		//						didLose();
-		//					}
-		//				} else {
-		//					didLose = true;
-		//					for (int c = 1; c < labels[0].length; c++){
-		//						if (labels[c]==labels[c-1]){
-		//							didLose = false;
-		//						}
-		//					}
-		//					if (didLose){
-		//						didLose();
-		//					}
-		//				}
-		//				return;
-		//			} else if (labels.length == 2){
-		//				if (labels[0].length == 1){
-		//					if (labels[0][0]!=labels[1][0]){
-		//						didLose();
-		//					}
-		//				} else if (labels[0].length == 2){
-		//					
-		//				} else {
-		//					
-		//				}
-		//				return;
-		//			}
-		//			
-		//			if (labels[0].length == 1){
-		//				asdf
-		//			}
-		//			if (labels[0].length == 2){
-		//				asdf
-		//			}
-		//			
-		//			didLose = true;
-		//			for (int r = 1; r < labels.length-1; r++){
-		//				for (int c = 1; c < labels[r].length-1; c++){
-		//					if ()
-		//				}
-		//			}
-		//			if () check corners
-		//			
-		//			if (didLose){
-		//				didLose();
-		//				return;
-		//			}
-		//		}
 	}
 
 	private void didWin(){
@@ -359,12 +303,6 @@ public class DataStructureFor2048 {
 		setLabel(r+1,c,-1);
 		moveAllUp(c);
 	}
-	//	public void swipeUp(){
-	//		if (shouldContinue){
-	//			System.out.println("Up");
-	//			didMakeMove();
-	//		}
-	//	}
 	///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	private boolean canSwipeRight(){
 		for (int r = 0; r < labels.length; r++){
@@ -427,12 +365,6 @@ public class DataStructureFor2048 {
 		setLabel(r,c-1,-1);
 		moveAllRight(r);
 	}
-	//	public void swipeRight(){
-//		if (shouldContinue){
-//			System.out.println("Right");
-//			didMakeMove();
-//		}
-//	}
 	///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	private boolean canSwipeLeft(){
 		for (int r = 0; r < labels.length; r++){
@@ -495,12 +427,6 @@ public class DataStructureFor2048 {
 		setLabel(r,c+1,-1);
 		moveAllLeft(r);
 	}
-	//	public void swipeLeft(){
-//		if (shouldContinue){
-//			System.out.println("Left");
-//			didMakeMove();
-//		}
-//	}
 	///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 	private void didMakeMove(){
